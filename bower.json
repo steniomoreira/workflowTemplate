@@ -1,0 +1,23 @@
+{
+  "name": "mao-na-massa",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Stenio Moreira"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.1",
+    "font-awesome": "^4.7.0",
+    "sass-flex-mixin": "^1.0.3"
+  }
+}

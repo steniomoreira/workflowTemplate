@@ -1,0 +1,17 @@
+{
+  "name": "mao-na-massa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stenio Moreira",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11"
+  }
+}
