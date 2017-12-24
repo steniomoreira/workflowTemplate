@@ -19,5 +19,8 @@
     "breakpoint-sass": "^2.7.1",
     "font-awesome": "^4.7.0",
     "sass-flex-mixin": "^1.0.3"
+  },
+  "devDependencies": {
+    "imagehover.css": "*"
   }
 }
