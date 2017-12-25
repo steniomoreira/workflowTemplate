@@ -9,74 +9,103 @@
 </head>
 
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
-			</div>
 
-			<div class="links">
-				<nav>
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfólio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="portfolio.html">Portfólio</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
 
-				<ul class="social">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-				</ul>		
-			</div>
-
-			<h1><strong>Thiago</strong> A. <strong>Grzybowski</strong></h1>
-
-			<p>Code // Share // Reboot</p>
-		</div><!-- container -->
-	</header>
-
-	<main>
-		<section class="sobre">
+	<div class="layout">
+		<header>
 			<div class="container">
-				<div class="itens">
-					<div class="foto">
-						<img src="images/foto-tag-miolo.png" alt="Foto TAG">
-					</div>
-
-					<div class="icone-lapis">
-						<i class="fa fa-pencil"></i>
-					</div>
-					<div class="icone-codigo">
-						<i class="fa fa-code"></i>
-					</div>
-					<div class="icone-coracao">
-						<i class="fa fa-heart"></i>
-					</div>
-					<div class="icone-compartilhar">
-						<i class="fa fa-share-alt"></i>
-					</div>	
+				<div class="logo">
+					<img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
 				</div>
 
-				<div class="textos">
-					<p>
-						<strong>Lorem ipsum dolor sit amet</strong>consectetur adipisicing elit. Illo beatae, odit accusamus magni nostrum obcaecati illum quod, dolorem sint perspiciatis nobis, ea amet necessitatibus, saepe! Aliquid aspernatur nobis saepe doloremque.
-					</p>					
-					<a href="#" class="botao medio"><i class="fa fa-eye"></i> Continue Lendo</a>
-				</div>			
-			</div><!-- container -->
-		</section>		
-	</main>
+				<div class="links">
+					<nav>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="portfolio.html">Portfólio</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
 
-	<footer>
-		<div class="logo-rodape">
-			<a href="index.html">
-				<img src="images/logo-tag-rodape.svg" alt="Logo TAG Rodapé">
-			</a>
-			<p>2017 Todos os Direitos Reservados</p>
-		</div>
-	</footer>
+					<a class="toggle" href="javascript:;">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+					</ul>		
+				</div>
+
+				<h1><strong>Thiago</strong> A. <strong>Grzybowski</strong></h1>
+
+				<p>Code // Share // Reboot</p>
+			</div><!-- container -->
+		</header>
+
+		<main>
+			<section class="sobre">
+				<div class="container">
+					<div class="itens">
+						<div class="foto">
+							<img src="images/foto-tag-miolo.png" alt="Foto TAG">
+						</div>
+
+						<div class="icone-lapis">
+							<i class="fa fa-pencil"></i>
+						</div>
+						<div class="icone-codigo">
+							<i class="fa fa-code"></i>
+						</div>
+						<div class="icone-coracao">
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="icone-compartilhar">
+							<i class="fa fa-share-alt"></i>
+						</div>	
+					</div>
+
+					<div class="textos">
+						<p>
+							<strong>Lorem ipsum dolor sit amet</strong>consectetur adipisicing elit. Illo beatae, odit accusamus magni nostrum obcaecati illum quod, dolorem sint perspiciatis nobis, ea amet necessitatibus, saepe! Aliquid aspernatur nobis saepe doloremque.
+						</p>					
+						<a href="#" class="botao medio"><i class="fa fa-eye"></i> Continue Lendo</a>
+					</div>			
+				</div><!-- container -->
+			</section>		
+		</main>
+
+		<footer>
+			<div class="logo-rodape">
+				<a href="index.html">
+					<img src="images/logo-tag-rodape.svg" alt="Logo TAG Rodapé">
+				</a>
+				<p>2017 Todos os Direitos Reservados</p>
+			</div>
+		</footer>
+	</div><!-- layout -->
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){	
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});	
+		});
+	</script>
 	
 </body>
 </html>
